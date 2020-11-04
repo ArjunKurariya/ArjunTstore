@@ -1,0 +1,960 @@
+<html>
+
+<head>
+   
+    <title>JAI SHREE RAM</title>
+   
+    <style type="text/css">
+   
+            *{
+            padding: 0px;
+            margin:  0px;
+        }
+       
+       
+        .bgimage{
+        margin-top: 20px;
+            background-color: white;
+        color: azure;
+        }
+       
+       
+        .leftmenu{
+         float: left;
+         width: 50%;
+        }
+       
+
+        .rightmenu{
+            float: right;
+            width: 50%;
+        }
+       
+        .rightmenu ul li {
+            text-transform: uppercase;
+            display: inline-block;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+       
+        .rightmenu ul{
+            margin-left: 25px;
+            margin-top:28px;
+        }
+       
+        .rightmenu ul li a{
+            color: black;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 18px;
+        }
+       
+   
+        .rightmenu ul li a:hover{
+            color: coral;
+        }
+       
+   
+       
+        .ic{
+            font-size: 20px;
+        }
+       
+       
+        .pup{
+            background-color: blue;
+        }
+       
+       
+                .service h3{
+            font-size: 30px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-family: sans-serif;
+        }
+       
+        .row{
+            display: flex;
+            justify-content: space-around;
+        }
+       
+       
+        .col-1{
+            border: 4px solid red;
+        }
+       
+        .col-1 img{
+            padding-top: 12px;
+            width: 36%;
+            height: 20vh;
+            padding-left: 150px;
+        }
+       
+       
+        .col-1{
+            background-color:antiquewhite;
+            flex-basis: 30%;
+        }
+   
+       
+        .col-1 h2{
+            padding-left: 168px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+       
+         .col-2 img{
+            padding-top: 12px;
+             width: 36%;
+            height: 20vh;
+            padding-left: 150px;
+        }
+            .col-2{
+            border: 4px solid red;
+                background-color:antiquewhite;
+                flex-basis: 30%;
+        }
+   
+       
+        .col-2 h2{
+            padding-left: 157px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+       
+       
+        .col-3{
+                border: 4px solid red;
+                background-color:antiquewhite;        
+                flex-basis: 30%;
+        }
+   
+        .col-3 img{
+            width: 36%;
+            padding-top: 12px;
+            height: 20vh;
+            padding-left: 150px;
+        }
+       
+        .col-3 h2{
+            padding-left: 157px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+       
+        .col-1 p{
+            padding: 5px 14px;
+            font-family: cursive;
+        }
+       
+        .col-2 p{
+            font-family: cursive;
+        }
+       
+        .col-3 p{
+            font-family: cursive;
+        }
+       
+
+       
+   
+/*services*/
+        p,a,h1,h2,h3,h4,h5,h6,ul,li {
+margin: 0;
+padding: 0;
+}
+
+.section-services {
+font-family: "Poppins", sans-serif;
+background-color: #e6edf7;
+color: #202020;
+padding-top: 115px;
+    padding-bottom: 120px;
+}
+
+.section-services .header-section {
+margin-bottom: 34px;
+}
+
+.section-services .header-section .title {
+position: relative;
+    padding-bottom: 14px;
+    margin-bottom: 25px;
+font-weight: 700;
+    font-size: 32px;
+}
+
+.section-services .header-section .title:before {
+content: "";
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+width: 50px;
+height: 3px;
+background-color: #ff4500;
+    border-radius: 3px;
+}
+
+.section-services .header-section .title:after {
+content: "";
+position: absolute;
+bottom: 0;
+left: 50%;
+    transform: translateX(30px);
+width: 10px;
+height: 3px;
+background-color: #504f93;
+    border-radius: 3px;
+}
+
+.section-services .header-section .description {
+font-size: 14px;
+    color: #282828;
+}
+
+.section-services .single-service {
+    position: relative;
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px 30px;
+    overflow: hidden;
+}
+
+.section-services .single-service .content {
+position: relative;
+z-index: 20;
+}
+
+.section-services .single-service .circle-before {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    transform: translate(40%, -40%);
+    width: 150px;
+    height: 150px;
+    background-color: #ff4500;
+    border: 6px solid #504f93;
+    border-radius: 50%;
+    opacity: 0.5;
+    z-index: 10;
+    transition: all .6s;
+}
+
+.section-services .single-service:hover .circle-before {
+width: 100%;
+height: 100%;
+transform: none;
+border: 0;
+border-radius: 0;
+opacity: 1;
+}
+
+.section-services .single-service .icon {
+display: inline-block;
+margin-bottom: 26px;
+    width: 70px;
+    height: 70px;
+    background-color: #ff4500;
+    border-radius: 5px;
+    line-height: 70px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    transition: all .3s;
+}
+
+.section-services .single-service:hover .icon {
+background-color: #fff;
+color: #ff4500;
+}
+
+.section-services .single-service .title {
+    margin-bottom: 18px;
+font-weight: 700;
+    font-size: 23px;
+    transition: color .3s;
+}
+
+.section-services .single-service:hover .title {
+color: #fff;
+}
+
+.section-services .single-service .description {
+    margin-bottom: 20px;
+    font-size: 14px;
+    transition: color .3s;
+}
+
+.section-services .single-service:hover .description {
+color: #fff;
+}
+
+.section-services .single-service a {
+position: relative;
+font-size: 18px;
+    color: #202020;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color .3s;
+}
+
+.section-services .single-service:hover a {
+color: #fff;
+}
+
+.section-services .single-service a:after {
+content: "";
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+height: 1px;
+background-color: #ff4500;
+transition: background-color .3s;
+}
+
+.section-services .single-service:hover a:after {
+background-color: #fff;
+}
+
+
+        /*Quota*/
+       
+       
+        .padding {
+    padding: 3rem !important
+}
+
+.free-quote {
+    background: #eb9007;
+    padding: 30px 50px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 15px
+}
+
+.heading {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #fff
+}
+
+.free-quote .form-control {
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background: none;
+    color: #fff
+}
+
+.form-control {
+    height: 43px;
+    border-radius: 0
+}
+
+.free-quote .form-control:focus {
+    border: 2px solid #fff
+}
+
+.btn-primary {
+    color: #212529;
+    background-color: #FB8C00;
+    border-color: #f89d13
+}
+
+.btn.btn-primary {
+    border: 2px solid transparent
+}
+
+.btn {
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    border-radius: 0
+}
+
+.btn.btn-primary:hover {
+    border: 2px solid #FB8C00;
+    background: none !important;
+    color: #fff !important
+}
+       
+       
+        /*About*/
+       
+       
+          /*---About---*/
+       
+        #about,#offer{
+        padding: 100px 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        }
+       
+        .about-left-col{
+            flex-basis: 50%;
+        }
+       
+       
+        .about-left-col img{
+         width: 100%;
+        }
+       
+        .about-right-col{
+        flex-basis: 50%;    
+        text-align: right;
+        }
+   
+        .about-text{
+            max-width: 500px;
+            margin-right: 100px;
+            display: inline-block;
+        }
+   
+       
+        /*Contact Us*/
+       
+        .container{
+position: relative;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px 100px;
+}
+
+.container:after{
+content: '';
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+background: url("img/bg.jpg") no-repeat center;
+background-size: cover;
+filter: blur(50px);
+z-index: -1;
+}
+.contact-box{
+max-width: 850px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+justify-content: center;
+align-items: center;
+text-align: center;
+background-color: #fff;
+box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+background: url("img/bg.jpg") no-repeat center;
+background-size: cover;
+height: 100%;
+}
+
+.right{
+padding: 25px 40px;
+}
+
+h2{
+position: relative;
+padding: 0 0 10px;
+margin-bottom: 10px;
+}
+
+h2:after{
+content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+}
+
+.field{
+width: 100%;
+border: 2px solid rgba(0, 0, 0, 0);
+outline: none;
+background-color: rgba(230, 230, 230, 0.6);
+padding: 0.5rem 1rem;
+font-size: 1.1rem;
+margin-bottom: 22px;
+transition: .3s;
+}
+
+.field:hover{
+background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+min-height: 150px;
+}
+
+.btn{
+width: 100%;
+padding: 0.5rem 1rem;
+background-color: #2ecc71;
+color: #fff;
+font-size: 1.1rem;
+border: none;
+outline: none;
+cursor: pointer;
+transition: .3s;
+}
+
+.btn:hover{
+    background-color: #27ae60;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+        .title{
+            margin-bottom: 100px;
+        }      
+       
+       
+       
+        /*Footer*/
+
+       
+        footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+    color: #00aced;
+}
+
+.ion-social-googleplus:hover {
+    color: #dd4b39;
+}
+
+.ion-social-instagram:hover {
+    color: #517fa4;
+}
+
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+        .ic{
+            font-size: 30px;
+        }    
+       
+       
+        .pup{
+           
+        }
+       
+       
+       
+@media screen and (max-width: 880px){
+.contact-box{
+grid-template-columns: 1fr;
+}
+.left{
+height: 200px;
+}
+}
+       
+       
+
+       .leftmenu img{
+
+           border-radius: 50%;
+
+       }
+
+       .header-text{
+           justify-content: center;
+       }
+
+       .icon-section{
+           display: flex;
+           justify-content: space-around;
+       }
+
+        .icon-box {
+           display: flex;
+           flex-direction: column;
+
+        }
+
+        .menu{
+            display: flex;
+        }
+
+
+
+       
+       
+
+    </style>
+   
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   
+   
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
+
+   
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+       
+   
+   
+    </head>
+
+   
+    <body>
+   
+        <div class="bgimage">
+        <div class="menu">
+        <div class="leftmenu"><img src="img/logo.png" id="i1"></div>
+       
+            <div class="rightmenu">
+            <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">CONTACT US</a></li>
+            </ul>
+            </div>
+        </div>
+        </div>
+       
+       
+    <div class="pup">
+       
+        <h1 class = "header-text" >Book Best Packers and Movers at Lowest Price</h1>
+
+        <div class="icon-section">
+
+            
+            <div class="icon-box">
+                
+                <div class="ic">    <i class="fas fa-hand-holding-usd"></i></div>
+                <h6>Best Price</h6>
+                
+            </div>
+            
+            
+            <div class="icon-box">
+                
+                <div class="ic"><i class="fas fa-times"></i></div>
+                <h6>Free Cancellation</h6>
+                
+            </div>
+            
+            
+            <div class="icon-box">
+                
+                <div class="ic"><i class="fas fa-user-shield"></i></div>
+                <h6>Dedicated Manager</h6>
+                
+            </div>
+            
+        </div>
+       
+
+       
+
+       
+        </div>
+       
+   
+       
+
+        <!-------Quota-------->
+       
+<div class="padding container-fluid d-flex justify-content-center">
+    <div class="col-md-4">
+        <div class="free-quote bg-dark h-100">
+            <h2 class="my-4 heading text-center">Get Free Quote</h2>
+            <form method="post">
+                <div class="form-group"> <label for="fq_name">Name</label> <input type="text" class="form-control btn-block" id="fq_name" name="fq_name" placeholder="Enter Name"> </div>
+                <div class="form-group mb-4"> <label for="fq_email">Email</label> <input type="text" class="form-control btn-block" id="fq_email" name="fq_email" placeholder="Enter Email"> </div>
+                <div class="form-group"> <input type="submit" class="btn btn-primary text-white py-2 px-4 btn-block" value="Get Quote"> </div>
+            </form>
+        </div>
+    </div>
+</div>
+       
+       
+        <!-----About us----->
+       
+            <!---About--->
+       
+        <section id="about">
+       
+            <div class="about-left-col">
+            <img src="img/download%20(1).jpg">
+            </div>
+   
+            <div class="about-right-col">
+           
+                <div class="about-right-col">
+               
+                <div class="about-text">
+                    <h1>About Us</h1><br>
+       
+                    <span class="square">  </span>
+       
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <br>    
+                            <div class="line">
+                   
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                    <span class="line-3"></span>
+                   
+                    </div>
+        <br>
+                   
+                   
+                    </div>
+                </div>
+               
+            </div>
+           
+        </section>
+       
+   
+       
+       
+       
+       
+        <!-- START SECTION SERVICES -->
+<section class="section-services">
+<div class="container">
+<div class="row justify-content-center text-center">
+<div class="col-md-10 col-lg-8">
+<div class="header-section">
+<h2 class="title"></h2>
+
+</div>
+</div>
+</div>
+<div class="row">
+<!-- Single Service -->
+<div class="col-md-6 col-lg-4">
+<div class="single-service">
+<div class="content">
+<span class="icon">
+<i class="fab fa-battle-net"></i>
+</span>
+<h3 class="title">HouseHold Shiftings</h3>
+<p class="description">Mauris volutpat urna tristique finibus iaculis. Morbi facilisis, justo eu vulputate elementum, est augue tincidunt ante, sed efficitur leo ligula vel velit.</p>
+<a href="#" class="learn-more">Learn More</a>
+</div>
+<span class="circle-before"></span>
+</div>
+</div>
+<!-- / End Single Service -->
+<!-- Single Service -->
+<div class="col-md-6 col-lg-4">
+<div class="single-service">
+<div class="content">
+<span class="icon">
+<i class="fab fa-asymmetrik"></i>
+</span>
+<h3 class="title">Easy Management</h3>
+<p class="description">Mauris volutpat urna tristique finibus iaculis. Morbi facilisis, justo eu vulputate elementum, est augue tincidunt ante, sed efficitur leo ligula vel velit.</p>
+<a href="#" class="learn-more">Learn More</a>
+</div>
+<span class="circle-before"></span>
+</div>
+</div>
+<!-- / End Single Service -->
+<!-- Single Service -->
+<div class="col-md-6 col-lg-4">
+<div class="single-service">
+<div class="content">
+<span class="icon">
+<i class="fab fa-artstation"></i>
+</span>
+<h3 class="title">All Day Services</h3>
+<p class="description">Mauris volutpat urna tristique finibus iaculis. Morbi facilisis, justo eu vulputate elementum, est augue tincidunt ante, sed efficitur leo ligula vel velit.</p>
+<a href="#" class="learn-more">Learn More</a>
+</div>
+<span class="circle-before"></span>
+</div>
+</div>
+<!-- / End Single Service -->
+<!-- Single Service -->
+<div class="col-md-6 col-lg-4">
+<div class="single-service">
+<div class="content">
+<span class="icon">
+<i class="fab fa-500px"></i>
+</span>
+<h3 class="title">Always in service</h3>
+<p class="description">Mauris volutpat urna tristique finibus iaculis. Morbi facilisis, justo eu vulputate elementum, est augue tincidunt ante, sed efficitur leo ligula vel velit.</p>
+<a href="#" class="learn-more">Learn More</a>
+</div>
+<span class="circle-before"></span>
+</div>
+</div>
+<!-- / End Single Service -->
+<!-- Single Service -->
+<div class="col-md-6 col-lg-4">
+<div class="single-service">
+<div class="content">
+<span class="icon">
+<i class="fas fa-chart-pie"></i>
+</span>
+<h3 class="title">Fast Service</h3>
+<p class="description">Mauris volutpat urna tristique finibus iaculis. Morbi facilisis, justo eu vulputate elementum, est augue tincidunt ante, sed efficitur leo ligula vel velit.</p>
+<a href="#" class="learn-more">Learn More</a>
+</div>
+<span class="circle-before"></span>
+</div>
+</div>
+<!-- / End Single Service -->
+<!-- Single Service -->
+<div class="col-md-6 col-lg-4">
+<div class="single-service">
+<div class="content">
+<span class="icon">
+<i class="fas fa-laptop-code"></i>
+</span>
+<h3 class="title">Quick Work</h3>
+<p class="description">Mauris volutpat urna tristique finibus iaculis. Morbi facilisis, justo eu vulputate elementum, est augue tincidunt ante, sed efficitur leo ligula vel velit.</p>
+<a href="#" class="learn-more">Learn More</a>
+</div>
+<span class="circle-before"></span>
+</div>
+</div>
+<!-- / End Single Service -->
+</div>
+</div>
+</section>
+<!-- / END SECTION SERVICES -->
+
+
+       
+        <!-----Contact Us------>
+       
+        <div class="container">
+<div class="contact-box">
+<div class="left"></div>
+<div class="right">
+<h2>Contact Us</h2>
+<input type="text" class="field" placeholder="Your Name">
+<input type="text" class="field" placeholder="Your Email">
+<input type="text" class="field" placeholder="Phone">
+<textarea placeholder="Message" class="field"></textarea>
+<button class="btn">Send</button>
+</div>
+</div>
+</div>
+       
+        <!------Footer----->
+       
+       
+          <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2020 by Arjun Kurariya Project. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    
+       
+       
+       
+    </body>
+   
+</html>
